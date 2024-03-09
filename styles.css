@@ -1,0 +1,86 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #87CEEB; /* Sky blue smooth color */
+}
+
+/* Task bar styles */
+.task-bar {
+  display: flex;
+  flex-wrap: wrap; /* Allow task bars to wrap on smaller screens */
+}
+
+/* Task category styles */
+.task-category {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Adjust width for smaller screens */
+  max-width: 300px; /* Example value, adjust as needed */
+}
+
+/* Task styles */
+.task {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #999999;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Add task form styles */
+.add-task-form {
+  margin-top: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Input styles */
+input[type="text"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Image styles */
+.task-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .task-category {
+    max-width: 100%; /* Allow task categories to take full width on smaller screens */
+  }
+}
